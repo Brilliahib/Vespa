@@ -1,0 +1,153 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: hsl(250, 69%, 61%);
+  --bg-color: #f6f7fb;
+  --big-font: 3.6rem;
+  --h2-font: 2.26rem;
+  --p-font: 1.1rem;
+  --text-color: #35404e;
+  --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  --line-color: #d7d7d7;
+  --first-color: #0e2431;
+  --third-color: #777;
+}
+
+section {
+  padding: 75px 16.7%;
+}
+
+nav {
+  padding: 75px 16.7%;
+  background-color: #cdd7df;
+}
+
+nav img {
+  width: 100px;
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+  align-items: center;
+  text-align: left;
+  background-color: #cdd7df;
+  padding-top: 5rem;
+}
+
+img {
+  width: 500px;
+  height: auto;
+  transition: 0.3s ease-in-out;
+}
+
+.content-text {
+  text-align: left;
+  width: 100%;
+}
+
+.content-text p {
+  max-width: 100%;
+  width: 430px;
+  font-size: var(--p-font);
+  color: #000;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.content-text h1 {
+  line-height: 1;
+  margin-bottom: 25px;
+  font-size: var(--big-font);
+  text-align: left;
+  color: #3d535f;
+  font-weight: 900;
+}
+
+.colour-select div {
+  background: #333;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: #3d535f;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.colour-select {
+  display: flex;
+  margin-top: 30px;
+}
+
+.colour-select #grey {
+  background: rgb(60, 60, 60);
+  transition: 0.3s ease-in-out;
+}
+
+.colour-select #grey:hover {
+  transform: translateY(-10px);
+}
+
+.colour-select #yellow {
+  background: yellow;
+  transition: 0.3s ease-in-out;
+}
+
+.colour-select #yellow:hover {
+  transform: translateY(-10px);
+}
+
+.colour-select #white {
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.colour-select #white:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 950px) {
+  nav {
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  .content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .content-img img {
+    margin-bottom: 12px;
+    width: 300px;
+  }
+  .content-text p,
+  h1,
+  h2 {
+    width: 100%;
+    text-align: left;
+  }
+}
